@@ -54,7 +54,7 @@ background-color: #F4F2F0;
         &:after {
             content: '';
             position: absolute;
-            background-image: url(./../../img/top/plus.svg);
+            background-image: url(../../images_new/top/plus.svg);
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
@@ -75,7 +75,7 @@ background-color: #F4F2F0;
 
         &.is-opened:after {
             content: '';
-            background-image: url(./../../img/top/minus.svg);
+            background-image: url(../../images_new/top/minus.svg);
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;

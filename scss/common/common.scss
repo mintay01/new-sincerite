@@ -1,0 +1,21 @@
+// Dependencies CSS
+@import "../../node_modules/swiper/swiper-bundle";
+@import "../../node_modules/slick-carousel/slick/slick";
+
+// CSS
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./abstracts/font-face";
+@import "./vendors/reset";
+@import "./base/global";
+@import "./base/typography";
+@import "./components/btns";
+@import "./layout/about";
+@import "./layout/header";
+@import "./layout/nav";
+@import "./layout/hero";
+@import "./layout/footer";
+@import "./layout/income";
+@import "./layout/news";
+@import "./layout/plan";
+@import "./layout/popular";

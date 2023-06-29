@@ -1,0 +1,163 @@
+.hero {
+    position: relative;
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__left {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        padding: 84px 20px;
+    }
+
+    &__logo {
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 21px;
+        }
+    }
+
+    &__ttl {
+        font-size: 1.6rem;
+        font-weight: 500;
+        letter-spacing: 0.05em;
+        line-height: 1.125;
+    }
+
+    &__rgt {
+        width: calc(50% + 417px);
+
+        .swiper {
+            &-slide {
+                img {
+                    display: block;
+                    width: 100%;
+                    aspect-ratio: 1377 / 1080;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    &__banner {
+        
+        @include mq("tablet") {
+            position: absolute;
+            bottom: 93px;
+            left: 6.45833%;
+            z-index: 2;
+            // width: calc(100% - 124px);
+            right: 0;
+        }
+
+        &-fst {
+            font-family: $font-secondary;
+            color: $color-primary;
+            font-size: 4rem;
+            letter-spacing: 0.05em;
+            margin-bottom: 9px;
+
+            span {
+                display: inline-block;
+
+                &:not(:last-of-type) {
+                    margin-right: 20px;
+                    position: relative;
+
+                    &::after {
+                        content: "";
+                        display: block;
+                        width: 1px;
+                        height: 70%;
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        transform: translateY(-62%);
+                        background-color: $color-org;
+                        rotate: 27.5deg;
+                    }
+                }
+            }
+        }
+
+        &-sec {
+            font-family: $font-mincho;
+            color: $color-org02;
+            font-size: 5rem;
+            letter-spacing: -0.02em;
+            padding: 6.5px 28px 12px 32px;
+            background-color: $color-gray-3;
+            display: inline-block;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.07);
+            margin-bottom: 18px;
+
+            span {
+                letter-spacing: -0.05em;
+            }
+        }
+
+        &-trd {
+            width: fit-content;
+            padding: 18px 0 22px 31px;
+            background-color: $color-gray-3;
+            font-family: $font-mincho;
+            font-size: 8.5rem;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.07);
+
+            span {
+                display: inline-block;
+                font-family: $font-mincho;
+                font-size: 8.5rem;
+
+                &.fs-a {
+                    font-size: 8.4rem;
+                    letter-spacing: 0.15em;
+                }
+
+                &.fs-b {
+                    font-size: 8.4rem;
+                    letter-spacing: 0.14em;
+                }
+
+                &.fs-c {
+                    font-size: 6.7rem;
+                    letter-spacing: 0.15em;
+                }
+                &.fs-s {
+                    font-size: 6.6rem;
+                    letter-spacing: 0.19em;
+                }
+                &.fs-t {
+                    letter-spacing: 0.15em;
+                }
+                &.fs-u {
+                    letter-spacing: 0.02em;
+                }
+
+                &.-dots {
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        display: block;
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                        background-color: $color-black;
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+
+            &>ruby {
+                letter-spacing: 0.14em;
+            }
+        }
+    }
+}

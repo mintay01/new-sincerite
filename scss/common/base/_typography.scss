@@ -1,0 +1,77 @@
+.heading-primary {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0 30px;
+
+    @include mq('tablet'){
+        flex-direction: row;
+        padding: 60px 0 80px;
+    }
+
+    &-en {
+        font-size: 4.2rem;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        font-family: $font-secondary;
+        position: relative;
+
+        @include mq('tablet'){
+          font-size: 6rem;
+          line-height: 0.7;
+          margin-right: 16px;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 1px;
+            height: 60px;
+            background-color: #b19d7f;
+            left: 50%;
+            transform: translateX(-50%);
+            top: -60px;
+            transform: rotate(25deg);
+
+            @include mq('tablet'){
+                left: -25px;
+                top: -12px;
+            }
+        }
+    }
+
+    &-jp {
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.6;
+        letter-spacing: 0.05em;
+
+        @include mq('tablet'){
+            font-size: 1.6rem;
+        }
+    }
+}
+
+
+.d-none{
+    display: none;
+}
+
+.d-md-none{
+    display: block;
+
+    @include mq('tablet'){
+        display: none;
+    }
+}
+
+.d-md-block{
+    display: none;
+
+    
+    @include mq('tablet'){
+        display: block;
+    }
+}

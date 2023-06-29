@@ -1,0 +1,145 @@
+.plan {
+    &__row {
+        display    : flex;
+        width      : calc(50vw + 640px);
+        margin-left: auto;
+    }
+
+    &__col-lg {
+        width    : 58%;
+        max-width: 732px;
+    }
+
+    &__fig {
+        position: relative;
+
+        &::after {
+            position           : absolute;
+            content            : "";
+            width              : 470px;
+            height             : 264px;
+            background-image   : url(./../../img/top/plan/plan-men-02.jpg);
+            background-position: center;
+            background-size    : contain;
+            background-repeat  : no-repeat;
+            left               : -310px;
+            bottom             : -165px;
+        }
+
+        img {
+            width        : 100%;
+            // max-height: 533px;
+        }
+
+        &-capt {
+            font-size     : 15rem;
+            letter-spacing: 0.02em;
+            line-height   : 0.86;
+            font-family   : $font-secondary;
+            position      : absolute;
+            right         : 52px;
+            bottom        : -175px;
+        }
+    }
+
+    &__col-sm {
+        // width: 42%;
+        width           : calc(100% - 732px);
+        background-color: $color-black;
+        padding         : 80px 0 85px 77px;
+
+        &.-pnk {
+            background-color: $color-pink;
+        }
+
+        .btn-primary {
+            margin: 35px 0 0 74px;
+
+            // &:hover {
+            //     letter-spacing: normal;
+            // }
+
+            &:after {
+                right: 24px;
+            }
+
+        }
+    }
+
+    &__ttl-sm {
+        font-size       : 1.6rem;
+        letter-spacing  : 0.05em;
+        background-color: $color-white;
+        display         : inline-block;
+        clip-path       : polygon(2% 0, 100% 0, 100% 78%, 98% 100%, 0 100%, 0 25%);
+        padding         : 7px 19px;
+    }
+
+    &__desc {
+        font-size  : 2rem;
+        line-height: 1.6;
+        color      : $color-white;
+        font-family: $font-mincho;
+        padding    : 37px 0 40px;
+    }
+
+    &__content {
+        padding-left : 74px;
+        margin-bottom: 20px;
+
+        &-desc {
+            font-size     : 1.6rem;
+            line-height   : 1.4;
+            letter-spacing: 0.05em;
+            color         : $color-primary;
+            position      : relative;
+
+            &::before {
+                position        : absolute;
+                content         : "";
+                width           : 60px;
+                height          : 1px;
+                background-color: $color-primary;
+                left            : -74px;
+                top             : 10px;
+            }
+
+            &.-pnk {
+                color: $color-white;
+
+                &::after {
+                    background-color: $color-white;
+                }
+            }
+        }
+
+        &-ttl {
+            font-size     : 3rem;
+            line-height   : 1.16;
+            font-family   : $font-mincho;
+            color         : $color-primary;
+            display       : inline-block;
+            padding-bottom: 14px;
+            border-bottom : 1px solid $color-primary;
+            position      : relative;
+
+            &::after {
+                position        : absolute;
+                content         : "";
+                width           : 100%;
+                height          : 1px;
+                bottom          : 3px;
+                left            : 0;
+                background-color: $color-primary;
+            }
+
+            &.-pnk {
+                color: $color-white;
+
+                &::after {
+                    background-color: $color-white;
+                }
+            }
+        }
+    }
+}

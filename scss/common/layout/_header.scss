@@ -1,0 +1,128 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    transition: background-color 0.3s ease-in-out;
+    
+    &.show-bg {
+        background-color: $color-white;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        
+        .header__logo {
+            opacity: 1;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        max-width: 398px;
+        background-color: $color-org;
+        padding: 15px 31px 16px 28px;
+        display: flex;
+        align-items: center;
+        gap: 45px;
+        text-decoration: none;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    &__heading {
+        color: $color-white;
+        font-size: 1.8rem;
+        font-weight: 500;
+        letter-spacing: 0.05em;
+        line-height: 1.33;
+    }
+
+    &__link {
+        @include mq("tablet") {
+            margin-right: 13px;
+        }
+
+        &-list {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 16px;
+            margin-bottom: 10px;
+
+            li {
+                a {
+                    text-decoration: none;
+                    display: block;
+                    background-color: $color-black;
+                    padding: 8px 18px;
+                    border-radius: 20px;
+                    color: $color-white;
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    letter-spacing: 0.05em;
+                    line-height: 1.4375;
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
+                    border: 1px solid $color-black;
+                    transition: all 0.3s ease-in-out;
+
+                    .btn__img {
+                        display: block;
+                        width: 24px;
+                        height: 24px;
+                        flex-shrink: 0;
+                        
+                        &-hover {
+                            flex-shrink: 0;
+                            display: none;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: $color-white;
+                        color: $color-black;
+                        border: 1px solid $color-org;
+
+                        .btn__img {
+                            display: none;
+
+                            &-hover {
+                                display: block;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    &__nav {
+        &-list {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 30px;
+            padding-right: 11px;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: $color-black;
+                    font-size: 1.4rem;
+                    font-weight: 500;
+                    letter-spacing: 0.05em;
+                    transition: opacity 0.3s ease-in-out;
+
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+    }
+}

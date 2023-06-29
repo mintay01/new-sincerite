@@ -1,0 +1,61 @@
+.gst {
+    padding-bottom: 20px;
+    &__box {
+        border-bottom: 1px solid #ddd7cf;
+        border-top: 1px solid #ddd7cf;
+    }
+    &__wpr {
+        padding: 40px 0;
+        max-width: 94%;
+        margin: 0 auto;
+    }
+    &__row {
+        display: flex;
+        margin: 0 -20px;
+    }
+
+    &__col {
+        width: 25%;
+        padding: 0 20px;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-black;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &__date {
+        font-size: 1.2rem;
+        line-height: 1.83;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        color: #b19d7f;
+        margin-top: 10px;
+    }
+    &__ttl {
+        font-size: 1.6rem;
+        line-height: 1.6;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        margin: 10px 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+    }
+    &__desc {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        font-weight: 400;
+        color: #7c7c7c;
+        letter-spacing: 0.05em;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+    }
+}

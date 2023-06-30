@@ -27,7 +27,7 @@
         content: "";
         width: 13px;
         height: 5px;
-        background-image: url(../../../images_new/top/arw-white.svg);
+        background-image: url(../../images_new/top/arw-white.svg);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -40,7 +40,7 @@
     }
 
     &.-ylw {
-        background-image: url(../../../images_new/top/btn-ylw-bg.png);
+        background-image: url(../../images_new/top/btn-ylw-bg.png);
         position: relative;
         margin-right: 20px;
 
@@ -49,14 +49,14 @@
             content: "";
             width: 43px;
             height: 43px;
-            background-image: url(../../../images_new/top/phone.svg);
+            background-image: url(../../images_new/top/phone.svg);
             left: 14px;
             top: 23px;
         }
     }
 
     &.-brw {
-        background-image: url(../../../images_new/top/btn-brw-bg.png);
+        background-image: url(../../images_new/top/btn-brw-bg.png);
         position: relative;
         border: 2px solid #b1907f;
 
@@ -65,7 +65,7 @@
             content: "";
             width: 43px;
             height: 43px;
-            background-image: url(../../../images_new/top/location.svg);
+            background-image: url(../../images_new/top/location.svg);
             left: 14px;
             top: 23px;
         }
@@ -121,7 +121,7 @@
         content: "";
         width: 13px;
         height: 5px;
-        background-image: url(../../../images_new/top/arw.svg);
+        background-image: url(../../images_new/top/arw.svg);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -141,7 +141,7 @@
         color: #fff;
 
         &::after {
-            background-image: url(../../../images_new/top/arw-white.svg);
+            background-image: url(../../images_new/top/arw-white.svg);
         }
     }
 
@@ -175,7 +175,7 @@
         content: "";
         width: 13px;
         height: 5px;
-        background-image: url(../../../images_new/top/arw.svg);
+        background-image: url(../../images_new/top/arw.svg);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -189,7 +189,7 @@
         content: "";
         width: 72px;
         height: 72px;
-        background-image: url(../../../images_new/top/info/info-01.svg);
+        background-image: url(../../images_new/top/info/info-01.svg);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -199,13 +199,13 @@
 
     &.-info2 {
         &::before {
-            background-image: url(../../../images_new/top/info/info-02.svg);
+            background-image: url(../../images_new/top/info/info-02.svg);
         }
     }
 
     &.-info3 {
         &::before {
-            background-image: url(../../../images_new/top/info/info-03.svg);
+            background-image: url(../../images_new/top/info/info-03.svg);
         }
     }
 

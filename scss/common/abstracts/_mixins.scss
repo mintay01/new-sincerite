@@ -3,6 +3,7 @@ $breakpoints: ("phablet": 576px,
     "tablet": 768px,
     "bootstrap-lg": 992px,
     "desktop": 1200px,
+    "desktop-l": 1290px,
     "desktop-lg": 1400px);
 
 @mixin mq($width, $type: min) {

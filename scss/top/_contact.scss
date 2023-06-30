@@ -1,6 +1,10 @@
 .contact {
     background-color: #b19d7f;
     padding: 42px 0 60px;
+    &__logo{
+        display: block;
+        margin: 0 auto;
+    }
     &__box {
         margin-top: 29px;
         text-align: center;

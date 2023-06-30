@@ -4,6 +4,7 @@
 
     @include mq("tablet") {
         padding-top: 0;
+        padding-bottom: 80px;
     }
 
     &__link {
@@ -38,7 +39,7 @@
     }
     &__cat {
         font-size: 1rem;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 2.4;
         letter-spacing: 0.05em;
         color: #fff;
@@ -60,7 +61,7 @@
 
     &__date {
         font-size: 1rem;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.05em;
         color: #707070;

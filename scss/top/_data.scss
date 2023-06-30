@@ -1,5 +1,11 @@
 .data {
-    margin-top: 105px;
+    margin-top: 95px;
+
+    .heading-primary {
+        @include mq("tablet") {
+            padding-bottom: 45px;
+        }
+    }
 
     &__row {
         display: flex;
@@ -42,7 +48,7 @@
     }
 
     &__col-wpr {
-        background-color: #ddd7cf;
+        background-color: #F4F2F0;
         padding: 45px 58px;
         display: flex;
         align-items: center;
@@ -151,7 +157,8 @@
         text-align: center;
     }
 
-    .btn-primary.-data{
+    .btn-primary.-data {
         margin-top: 30px;
+        margin-bottom: 45px;
     }
 }

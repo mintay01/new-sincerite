@@ -1,11 +1,18 @@
 .plan {
     padding-top: 80px;
     background-color: #f9f8f7;
+
+    @include mq('tablet'){
+        background-color: $color-white;
+    }
     &__row {
         display: flex;
         flex-direction: column;
         @include mq("tablet") {
             flex-direction: row;
+        }
+
+        @include mq("desktop-l") {
             width: calc(50vw + 640px);
             margin-left: auto;
         }

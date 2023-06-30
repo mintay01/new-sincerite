@@ -14,7 +14,7 @@ function copyFonts() {
 // Copy html
 function copyHtml() {
   return gulp
-    .src(["./**/*.html", "!./parts/*.html", "!./node_modules/**/*.html"])
+    .src(["./index.html", "!./parts/*.html", "!./node_modules/**/*.html"])
     .pipe(fileinclude({
       context: {
         name: "html"

@@ -141,6 +141,15 @@
         align-items: center;
         width: 100%;
         padding-right: 51px;
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.1s ease-in-out;
+        
+        &.hide {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.1s ease-in-out;
+        }
 
         @include mq("tablet", "max") {
             padding: 0;

@@ -1,7 +1,5 @@
 function fixSlider() {
     document.addEventListener("DOMContentLoaded", () => {
-        console.log("working");
-
         const voice = document.querySelector(".voice__block");
 
         const resizeObserver = new ResizeObserver(() => {
@@ -26,11 +24,6 @@ function fixSlider() {
                 texEl.style.height = height + "px";
             });
         }
-
-        // const sliderFix = (entries) => {
-        //     console.log(entries);
-        // };
-        
     });
 }
 

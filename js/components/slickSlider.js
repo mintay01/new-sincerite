@@ -8,7 +8,7 @@ function slickSlider() {
         infinite: true,
         speed: 500,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 1500,
         centerMode: true,
 
         prevArrow: $(".voice__swiper-button-prev"),
@@ -16,6 +16,21 @@ function slickSlider() {
 
         dots: true,
         appendDots: $(".slider-pagination"),
+    });
+    $(".popular__swiper").slick({
+        swipe: false,
+        variableWidth: true,
+        infinite: true,
+        speed: 500,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        centerMode: true,
+
+        prevArrow: $(".popular-button-prev"),
+        nextArrow: $(".popular-button-next"),
+
+        dots: true,
+        appendDots: $(".popular-pagination"),
     });
 }
 

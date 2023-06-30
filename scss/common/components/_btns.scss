@@ -1,38 +1,38 @@
 .btn-contact {
-    width: 285px;
-    height: 60px;
-    color: $color-white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
-    padding: 5px 39px 5px 65px;
+    width              : 285px;
+    height             : 60px;
+    color              : $color-white;
+    display            : flex;
+    flex-direction     : column;
+    align-items        : center;
+    justify-content    : center;
+    text-decoration    : none;
+    box-shadow         : 4px 4px 4px rgba(0, 0, 0, 0.1);
+    padding            : 5px 39px 5px 65px;
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 2px solid #baa05a;
-    border-radius: 4px;
-    transition: all 0.3s ease-in-out;
-    position: relative;
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    border             : 2px solid #baa05a;
+    border-radius      : 4px;
+    transition         : all 0.3s ease-in-out;
+    position           : relative;
 
     @include mq("tablet") {
-        width: 335px;
+        width : 335px;
         height: 91px;
     }
 
     &::after {
-        position: absolute;
-        content: "";
-        width: 13px;
-        height: 5px;
-        background-image: url(../../images_new/top/arw-white.svg);
+        position           : absolute;
+        content            : "";
+        width              : 13px;
+        height             : 5px;
+        background-image   : url(../../images_new/top/arw-white.svg);
         background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        right: 22px;
-        top: 44px;
+        background-size    : contain;
+        background-repeat  : no-repeat;
+        right              : 22px;
+        top                : 44px;
     }
 
     &:hover {
@@ -41,38 +41,38 @@
 
     &.-ylw {
         background-image: url(../../images_new/top/btn-ylw-bg.png);
-        position: relative;
-        margin-right: 20px;
+        position        : relative;
+        margin-right    : 20px;
 
         &::before {
-            position: absolute;
-            content: "";
-            width: 43px;
-            height: 43px;
+            position        : absolute;
+            content         : "";
+            width           : 43px;
+            height          : 43px;
             background-image: url(../../images_new/top/phone.svg);
-            left: 14px;
-            top: 23px;
+            left            : 14px;
+            top             : 23px;
         }
     }
 
     &.-brw {
         background-image: url(../../images_new/top/btn-brw-bg.png);
-        position: relative;
-        border: 2px solid #b1907f;
+        position        : relative;
+        border          : 2px solid #b1907f;
 
         &::before {
-            position: absolute;
-            content: "";
-            width: 43px;
-            height: 43px;
+            position        : absolute;
+            content         : "";
+            width           : 43px;
+            height          : 43px;
             background-image: url(../../images_new/top/location.svg);
-            left: 14px;
-            top: 23px;
+            left            : 14px;
+            top             : 23px;
         }
     }
 
     &-txt-lg {
-        font-size: 2rem;
+        font-size  : 2rem;
         line-height: 2;
         font-weight: 600;
 
@@ -82,63 +82,63 @@
     }
 
     &-txt-sm {
-        font-size: 1.2rem;
-        line-height: 2.1;
+        font-size     : 1.2rem;
+        line-height   : 2.1;
         letter-spacing: 0.05em;
-        text-align: right;
-        display: block;
-        margin-left: auto;
+        text-align    : right;
+        display       : block;
+        margin-left   : auto;
     }
 }
 
 .btn-primary {
-    font-size: 1.4rem;
-    font-weight: 400;
-    line-height: 2.5;
-    color: $color-black;
-    text-decoration: none;
-    width: 285px;
-    height: 60px;
-    border-radius: 71px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size       : 1.4rem;
+    font-weight     : 400;
+    line-height     : 2.5;
+    color           : $color-black;
+    text-decoration : none;
+    width           : 285px;
+    height          : 60px;
+    border-radius   : 71px;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
     background-color: $color-white;
-    border: 1px solid #b19d7f;
-    margin: 40px auto 60px;
-    transition: all 0.3s ease-in-out;
-    position: relative;
+    border          : 1px solid #b19d7f;
+    margin          : 40px auto 60px;
+    transition      : all 0.3s ease-in-out;
+    position        : relative;
 
     @include mq("tablet") {
         font-size: 1.6rem;
-        width: 320px;
-        height: 75px;
-        margin: 50px auto 60px;
+        width    : 320px;
+        height   : 75px;
+        margin   : 50px auto 60px;
     }
 
     &::after {
-        position: absolute;
-        content: "";
-        width: 13px;
-        height: 5px;
-        background-image: url(../../images_new/top/arw.svg);
+        position           : absolute;
+        content            : "";
+        width              : 13px;
+        height             : 5px;
+        background-image   : url(../../images_new/top/arw.svg);
         background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        right: 30px;
-        top: 50%;
-        transform: translateY(-50%);
+        background-size    : contain;
+        background-repeat  : no-repeat;
+        right              : 30px;
+        top                : 50%;
+        transform          : translateY(-50%);
     }
 
     &:hover {
         background-color: $color-gray-4;
-        border: 1px solid $color-org;
-        letter-spacing: 0.12em;
+        border          : 1px solid $color-org;
+        letter-spacing  : 0.12em;
     }
 
     &:active {
         background-color: $color-org;
-        color: #fff;
+        color           : #fff;
 
         &::after {
             background-image: url(../../images_new/top/arw-white.svg);
@@ -151,50 +151,54 @@
         }
     }
 
+    &.-voice {
+        margin: 0 auto;
+    }
+
 }
 
 .btn-secondary {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 2.5;
-    color: $color-black;
-    text-decoration: none;
-    width: 400px;
-    height: 86px;
-    border-radius: 86px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size       : 16px;
+    font-weight     : 400;
+    line-height     : 2.5;
+    color           : $color-black;
+    text-decoration : none;
+    width           : 400px;
+    height          : 86px;
+    border-radius   : 86px;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
     background-color: $color-white;
-    border: 1px solid #b19d7f;
-    transition: all 0.3s ease-in-out;
-    position: relative;
+    border          : 1px solid #b19d7f;
+    transition      : all 0.3s ease-in-out;
+    position        : relative;
 
     &::after {
-        position: absolute;
-        content: "";
-        width: 13px;
-        height: 5px;
-        background-image: url(../../images_new/top/arw.svg);
+        position           : absolute;
+        content            : "";
+        width              : 13px;
+        height             : 5px;
+        background-image   : url(../../images_new/top/arw.svg);
         background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        right: 30px;
-        top: 50%;
-        transform: translateY(-50%);
+        background-size    : contain;
+        background-repeat  : no-repeat;
+        right              : 30px;
+        top                : 50%;
+        transform          : translateY(-50%);
     }
 
     &::before {
-        position: absolute;
-        content: "";
-        width: 72px;
-        height: 72px;
-        background-image: url(../../images_new/top/info/info-01.svg);
+        position           : absolute;
+        content            : "";
+        width              : 72px;
+        height             : 72px;
+        background-image   : url(../../images_new/top/info/info-01.svg);
         background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        left: 7px;
-        top: 7px;
+        background-size    : contain;
+        background-repeat  : no-repeat;
+        left               : 7px;
+        top                : 7px;
     }
 
     &.-info2 {

@@ -13,18 +13,18 @@
     &__fig {
         position: relative;
 
-        &::after {
-            position           : absolute;
-            content            : "";
-            width              : 470px;
-            height             : 264px;
-            background-image   : url(../../../images_new/top/plan/plan-men-02.jpg);
-            background-position: center;
-            background-size    : contain;
-            background-repeat  : no-repeat;
-            left               : -310px;
-            bottom             : -165px;
-        }
+        // &::after {
+        //     position           : absolute;
+        //     content            : "";
+        //     width              : 470px;
+        //     height             : 264px;
+        //     background-image   : url(../../../images_new/top/plan/plan-men-02.jpg);
+        //     background-position: center;
+        //     background-size    : contain;
+        //     background-repeat  : no-repeat;
+        //     left               : -310px;
+        //     bottom             : -165px;
+        // }
 
         img {
             width        : 100%;

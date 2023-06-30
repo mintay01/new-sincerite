@@ -11,12 +11,12 @@ const js = require("./gulp/scripts");
 
 // Watch files
 function watchFiles() {
-    gulp.watch("./src/assets/scss/**/*", css.buildCss);
-    gulp.watch("./src/assets/js/**/*", scripts);
-    gulp.watch("./src/assets/img/**/*", images.optimizeImages);
-    gulp.watch("./src/**/*.html", copy.copyHtml);
-    gulp.watch("./src/assets/fonts/**/*", copy.copyFonts);
-    gulp.watch("./src/*.php", copy.copyPhp);
+    gulp.watch("./scss/**/*", css.buildCss);
+    gulp.watch("./js/**/*", scripts);
+    gulp.watch("./img/**/*", images.optimizeImages);
+    gulp.watch("./**/*.html", copy.copyHtml);
+    gulp.watch("./fonts/**/*", copy.copyFonts);
+    gulp.watch("./*.php", copy.copyPhp);
 }
 
 // define complex tasks

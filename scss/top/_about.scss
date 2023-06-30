@@ -1,6 +1,5 @@
 .about {
     padding-bottom: 20px;
-
     padding-top: 80px;
 
     @include mq("tablet") {
@@ -33,6 +32,7 @@
         @include mq("tablet") {
             margin: -196px auto;
             padding-bottom: 20px;
+            padding-top: 14px;
         }
     }
     &__box {
@@ -102,7 +102,7 @@
         flex-wrap: wrap;
         margin-bottom: 30px;
         @include mq("tablet") {
-            margin: 0 -18px 80px;
+            margin: 0 -18px 90px;
         }
     }
     &__col {
